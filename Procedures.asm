@@ -37,30 +37,30 @@ section .text
 	_start:
 	
 		scall 1, 1, msg1, len1		; display msg1
-		scall 0, 0, num, 3		    ; accept the 2 digit number from user
+		scall 0, 0, num, 3		; accept the 2 digit number from user
 	
 		xor rax, rax
 		xor rbx, rbx
-		xor rcx, rcx			        ; clearing the registers
+		xor rcx, rcx			; clearing the registers
 
-		mov rcx, 2			          ; as user gives 2 digit number, we put 2 in counter 
-		mov rsi, num			        ; make rsi point to the base of num
-		call AsciiToHex			      ; procedure call
-		mov [num], rbx			      ; now um contains the equivalent hex number
+		mov rcx, 2			; as user gives 2 digit number, we put 2 in counter 
+		mov rsi, num			; make rsi point to the base of num
+		call AsciiToHex			; procedure call
+		mov [num], rbx			; now um contains the equivalent hex number
 
 
-		add byte[num], 5		      ; adding 5 to the number
+		add byte[num], 5		; adding 5 to the number
 
 
 		xor rax, rax
 		xor rbx, rbx
-		xor rcx, rcx			         ; clearing the registers
+		xor rcx, rcx			 ; clearing the registers
 
-		mov rcx, 4			           ; we will display 4 digit output, so counter is initialsed to 4
-		mov rbx, [num]			       ; move number into rbx
-		mov rdi, ans			         ; make rdi point to the base address of ans variable
+		mov rcx, 4			 ; we will display 4 digit output, so counter is initialsed to 4
+		mov rbx, [num]			 ; move number into rbx
+		mov rdi, ans			 ; make rdi point to the base address of ans variable
 		call HexToAscii
-		scall 1, 1, ans, 4		     ; result after addition is printed	(eg. 05 is input..then output will be ascii of 5+5=10 ie 000A)
+		scall 1, 1, ans, 4		 ; result after addition is printed	(eg. 05 is input..then output will be ascii of 5+5=10 ie 000A)
 		scall 1, 1, nwline, 1
 		
 		
