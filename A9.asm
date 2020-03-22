@@ -78,7 +78,7 @@ factorial:
 	stop:
 		ret
 ; the above procedure recursively calculates factorial..we push the number onto the stack and then decrement the number...
-; This process continues till the number reachs zero
+; This process continues till the number reaches zero
 ; After that we start popping the number and multiply it to rax
 ; Thus rax will accumulate the factorial
 ;--------------------------------------------------------------------------------------------------------------------------------------------
