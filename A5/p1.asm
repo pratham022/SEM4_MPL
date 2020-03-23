@@ -92,3 +92,17 @@ terminate:
 
 
 ;----------------------------------------------------------------------------------------------------------------------------
+
+; prathamesh@prathamesh-Inspiron-3576:~/Documents/git_MPL/assign5_final$ ./p
+; File opened successfully
+; Number of spaces are:  7
+; Number of newlines are:  2
+; Enter a chracter: z
+; No. of occurrences of character: 0
+; prathamesh@prathamesh-Inspiron-3576:~/Documents/git_MPL/assign5_final$ ./p
+; File opened successfully
+; Number of spaces are:  7
+; Number of newlines are:  2
+; Enter a chracter: a
+; No. of occurrences of character: 2
+; prathamesh@prathamesh-Inspiron-3576:~/Documents/git_MPL/assign5_final$
