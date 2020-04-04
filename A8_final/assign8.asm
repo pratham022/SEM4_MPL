@@ -103,6 +103,22 @@ type:
 		mov rdi, [fd]
 		syscall				; file closing system call
 		exit
+		
+		
+		
+; $nasm -f elf64 assign8.asm
+; $ld -o a8 assign8.o
+; $./a8 TYPE file1.txt
+; TYPE: 
+; Hello there
+; This is file1.txt
+; Byeeeeeeeeeee.
+; -$./a8 COPY file1.txt file2.txt
+; COPY: 
+; $./a8 DELETE file1.txt
+; DELETE: 
+; $
+
 
 
 
